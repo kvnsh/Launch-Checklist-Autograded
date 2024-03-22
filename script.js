@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
 
     // Call formSubmission at the appropriate time
     const form = document.querySelector("form");
+    const list = document.querySelector("#faultyItems");
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         const pilotName = document.querySelector("input[name='pilotName']").value;
@@ -21,6 +22,6 @@ window.addEventListener("load", function() {
         const cargoMass = document.querySelector("input[name='cargoMass']").value;
 
         // Call formSubmission with obtained values
-        formSubmission(document, pilotName, copilotName, fuelLevel, cargoMass);
+        formSubmission(document,list, pilotName, copilotName, fuelLevel, cargoMass);
     });
 });
