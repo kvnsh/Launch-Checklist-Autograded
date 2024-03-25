@@ -93,6 +93,7 @@ async function myFetch() {
        });
 
     return planetsReturned;
+    
 }
  
 function pickPlanet(planets) {

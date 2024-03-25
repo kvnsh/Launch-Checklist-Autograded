@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
 
     // Call formSubmission at the appropriate time
     const form = document.querySelector("form");
+    
     const list = document.querySelector("#faultyItems");
     form.addEventListener("submit", function(event) {
         event.preventDefault();
